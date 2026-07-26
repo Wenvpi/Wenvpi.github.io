@@ -3,36 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Javier's Website</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 800px;
-      border: 1px solid #ccc;
-    }
-  </style>
+  <meta name="description" content="A simple academic homepage template for a researcher.">
+  <title>Researcher Website</title>
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
-  <h1>My PDF</h1>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Homepage">R</a>
 
-  <p>
-    <a href="documents/2406.07610v3.pdf" target="_blank">
-      Open PDF in a new tab
-    </a>
-  </p>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <iframe
-    src="documents/2406.07610v3.pdf"
-    title="PDF document">
-  </iframe>
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Academic homepage</p>
+      <h1 id="page-title">Researcher Name</h1>
+      <p class="intro">
+        A concise introduction for a researcher working across theoretical ideas,
+        technical methods, and open scientific questions.
+      </p>
+
+      <div class="hero-actions" aria-label="Primary links">
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </section>
+
+    <section class="overview" aria-label="Homepage summary">
+      <article class="summary-block" id="about">
+        <p class="section-label">About</p>
+        <h2>Profile</h2>
+        <p>
+          A short professional biography can go here. This space is intended for
+          academic background, current affiliation, and the main intellectual
+          thread of the website.
+        </p>
+      </article>
+
+      <article class="summary-block accent" id="research">
+        <p class="section-label">Research</p>
+        <h2>Interests</h2>
+        <p>
+          Use this section to name the central research areas, explain the kinds
+          of problems being studied, and point visitors toward deeper pages.
+        </p>
+      </article>
+    </section>
+
+    <section class="publications" id="publications" aria-labelledby="publications-title">
+      <div class="section-heading">
+        <p class="section-label">Selected work</p>
+        <h2 id="publications-title">Publications</h2>
+      </div>
+
+      <div class="publication-list">
+        <article>
+          <p class="pub-type">Preprint</p>
+          <h3>Title of a Recent Research Paper</h3>
+          <p>Author One, Author Two, Researcher Name. Journal or archive details.</p>
+          <a href="#">Read more</a>
+        </article>
+
+        <article>
+          <p class="pub-type">Journal article</p>
+          <h3>Title of Another Research Paper</h3>
+          <p>Researcher Name, Collaborator One, Collaborator Two. Publication details.</p>
+          <a href="#">Read more</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-panel" id="contact" aria-labelledby="contact-title">
+      <p class="section-label">Contact</p>
+      <h2 id="contact-title">Let us be in touch</h2>
+      <p>email@example.edu</p>
+    </section>
+  </main>
 </body>
 </html>
