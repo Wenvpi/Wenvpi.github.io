@@ -166,6 +166,10 @@ h2 {
   padding: 84px 0;
 }
 
+.thesis {
+  padding: 0 0 84px;
+}
+
 .activities {
   padding: 0 0 84px;
 }
@@ -214,6 +218,26 @@ h2 {
 
 .publication-list p {
   margin: 0 0 20px;
+}
+
+.thesis-panel {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.35fr);
+  gap: 44px;
+  padding: 34px 36px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper);
+}
+
+.thesis-panel h3 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.18;
+}
+
+.thesis-panel p {
+  margin: 0 0 22px;
 }
 
 .activity-group {
@@ -350,12 +374,14 @@ h2 {
   }
 
   .overview,
-  .publication-list {
+  .publication-list,
+  .thesis-panel {
     grid-template-columns: 1fr;
   }
 
   .summary-block,
   .publication-list article,
+  .thesis-panel,
   .contact-panel {
     padding: 28px;
   }
