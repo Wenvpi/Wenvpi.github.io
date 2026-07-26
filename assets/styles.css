@@ -5,6 +5,10 @@
   --ink: #111111;
   --rule: #222222;
   --lavender: #b9b9ef;
+  --accent-lavender: #b9b9ef;
+  --accent-blue: #b9d8ef;
+  --accent-green: #d8efbd;
+  --accent-peach: #efcfb9;
 }
 
 * {
@@ -162,6 +166,10 @@ h2 {
   padding: 84px 0;
 }
 
+.activities {
+  padding: 0 0 84px;
+}
+
 .section-heading {
   margin-bottom: 28px;
 }
@@ -173,17 +181,29 @@ h2 {
 .publication-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  border-top: 1px solid var(--rule);
 }
 
 .publication-list article {
   min-height: 360px;
   padding: 34px 36px;
+  border-top: 8px solid var(--accent-lavender);
   border-bottom: 1px solid var(--rule);
 }
 
 .publication-list article:nth-child(odd) {
   border-right: 1px solid var(--rule);
+}
+
+.publication-list article:nth-child(2) {
+  border-top-color: var(--accent-blue);
+}
+
+.publication-list article:nth-child(3) {
+  border-top-color: var(--accent-green);
+}
+
+.publication-list article:nth-child(4) {
+  border-top-color: var(--accent-peach);
 }
 
 .publication-list h3 {
@@ -196,8 +216,50 @@ h2 {
   margin: 0 0 20px;
 }
 
+.activity-group {
+  margin-top: 42px;
+}
+
+.activity-group:first-of-type {
+  margin-top: 0;
+}
+
+.activity-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.activity-list li {
+  margin-bottom: 14px;
+  padding-left: 4px;
+}
+
+.activity-title {
+  display: block;
+  font-weight: 700;
+}
+
 .pub-authors {
   font-size: 13px;
+}
+
+.publication-list .pub-type {
+  display: inline-block;
+  margin-bottom: 22px;
+  padding: 5px 8px;
+  background: var(--accent-lavender);
+}
+
+.publication-list article:nth-child(2) .pub-type {
+  background: var(--accent-blue);
+}
+
+.publication-list article:nth-child(3) .pub-type {
+  background: var(--accent-green);
+}
+
+.publication-list article:nth-child(4) .pub-type {
+  background: var(--accent-peach);
 }
 
 .pub-links,
@@ -217,6 +279,26 @@ h2 {
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.publication-list article:nth-child(1) .pub-links a {
+  background: var(--accent-lavender);
+}
+
+.publication-list article:nth-child(2) .pub-links a {
+  background: var(--accent-blue);
+}
+
+.publication-list article:nth-child(3) .pub-links a {
+  background: var(--accent-green);
+}
+
+.publication-list article:nth-child(4) .pub-links a {
+  background: var(--accent-peach);
+}
+
+.resource-links a {
+  background: transparent;
 }
 
 .contact-panel {
