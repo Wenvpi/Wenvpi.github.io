@@ -177,7 +177,7 @@ h2 {
 }
 
 .publication-list article {
-  min-height: 260px;
+  min-height: 360px;
   padding: 34px 36px;
   border-bottom: 1px solid var(--rule);
 }
@@ -188,17 +188,34 @@ h2 {
 
 .publication-list h3 {
   margin: 0 0 18px;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.18;
 }
 
 .publication-list p {
-  margin: 0 0 22px;
+  margin: 0 0 20px;
 }
 
-.publication-list a {
+.pub-authors {
+  font-size: 13px;
+}
+
+.pub-links,
+.resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pub-links a,
+.resource-links a {
+  min-width: 92px;
+  padding: 8px 12px;
+  border: 1px solid var(--rule);
+  text-align: center;
   font-size: 12px;
   font-weight: 700;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -207,6 +224,15 @@ h2 {
   padding: 46px;
   border: 1px solid var(--rule);
   background: var(--paper);
+}
+
+.email {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.resource-links {
+  margin-top: 28px;
 }
 
 @media (max-width: 760px) {
